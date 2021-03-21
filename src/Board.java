@@ -1,4 +1,4 @@
-public abstract class Table {
+public abstract class Board {
 
     protected String size;  //3x3 or 4x4
 
@@ -10,5 +10,7 @@ public abstract class Table {
         this.size = size;
     }
 
+    public abstract void shuffleBoard();
 
+    public abstract void printBoard();
 }
