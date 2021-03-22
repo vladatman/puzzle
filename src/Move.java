@@ -5,7 +5,8 @@ public class Move {
     int j = 2;
     int[][] underscore;
 
-    public moveUp() {
+    public void moveUp(Board board) {
+        int size = board.arr.length;
         int[][] array = board3x3.getArr();
         underscore[i][j] = array[2][2];
         //totally untested, hopefully it works (damn you vlad for using java 12 or higher)

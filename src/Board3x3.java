@@ -5,8 +5,6 @@ import java.util.stream.IntStream;
 
 public class Board3x3 extends Board{
 
-    private int[][] arr;
-
     public Board3x3() {
         this.arr = new int[3][3];
         this.size = "3x3";
@@ -37,13 +35,5 @@ public class Board3x3 extends Board{
         }
     }
 
-    public void printBoard(){
-        for (int[] ints : this.arr) {
-            for (int anInt : ints) {
-                if (anInt == 0) System.out.println("_\t");
-                else System.out.print(anInt + "\t");
-            }
-            System.out.println();
-        }
-    }
+
 }
