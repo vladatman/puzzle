@@ -18,7 +18,7 @@ public abstract class Board {
     public void printBoard(){
         for (int[] ints : this.arr) {
             for (int anInt : ints) {
-                if (anInt == 0) System.out.println("_\t");
+                if (anInt == 0) System.out.print("_\t");
                 else System.out.print(anInt + "\t");
             }
             System.out.println();
