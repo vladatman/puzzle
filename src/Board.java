@@ -15,14 +15,16 @@ public abstract class Board {
 
     public abstract void shuffleBoard();
 
-    public void printBoard(){
+    public String printBoard(){
+        StringBuffer strBuffer = new StringBuffer("");
         for (int[] ints : this.arr) {
             for (int anInt : ints) {
-                if (anInt == 0) System.out.print("_\t");
-                else System.out.print(anInt + "\t");
+                if (anInt == 0) strBuffer.append("_\t");
+                else strBuffer.append(anInt + "\t");
             }
-            System.out.println();
+            strBuffer.append('\n');
         }
+        return strBuffer.toString();
     }
 
     public void keyReleased(KeyEvent e) {
