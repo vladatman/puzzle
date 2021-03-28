@@ -8,7 +8,8 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 400);
+        frame.setSize(320, 150);
+        frame.setResizable(false);
         frame.setFocusable(true);
 
         //Scanner scanner = new Scanner(System.in);
