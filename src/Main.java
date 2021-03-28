@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.Font;
+import java.awt.event.MouseEvent;
 
 public class Main {
 
@@ -16,6 +17,8 @@ public class Main {
 
         JTextArea textArea = new JTextArea(board.getSize());
         textArea.setFont(new Font("monospaced", Font.PLAIN, 16));
+        //Disables mouse clicking inside
+        textArea.setEditable(false);
 
         frame.add(textArea);
         board.shuffleBoard();
