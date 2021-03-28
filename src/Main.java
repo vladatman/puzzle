@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.util.Scanner;
-import java.awt.event.KeyEvent;
 import java.awt.Font;
 
 public class Main {
@@ -15,7 +13,6 @@ public class Main {
         //Scanner scanner = new Scanner(System.in);
         boolean game = true;
         Board4x4 board = new Board4x4();
-        Move move = new Move(board);
 
         JTextArea textArea = new JTextArea(board.getSize());
         textArea.setFont(new Font("monospaced", Font.PLAIN, 16));
