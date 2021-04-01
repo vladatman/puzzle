@@ -74,7 +74,7 @@ public class Main{
                 \t'd' or 'right'\tto move RIGHT
                 \t'a' or 'left'\tto move LEFT
                 \t'h' or 'help'\tto show HELP
-                \t'r' or 'exit'\tto EXIT
+                \t'e' or 'exit'\tto EXIT
                 """);
     }
 
