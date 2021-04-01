@@ -42,12 +42,4 @@ public abstract class Board {
         }
         return true;
     }
-
-    public void keyReleased(KeyEvent e) {
-        this.keyPressed(e);
-    }
-
-    public void keyPressed(KeyEvent e) {
-        this.keyPressed(e);
-    }
 }
