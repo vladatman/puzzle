@@ -8,7 +8,7 @@ Artem Yerzakovich, Momchil Dichev, Virag Szabo, Vladislav Atamanciuc
 
 ### About the game
 This project is a sliding puzzle in a console version. 
-Before you can start game, you decide between two sizes (3x3 or 4x4). 
+Before you can start game, you can decide between two sizes (3x3 or 4x4). 
 Then, you can put the numbers into the correct order using w (up), s (down), d (right), a (left). 
 You can also ask help during the game using 'h' keyboard. 
 Finally, if you want to quit before finishing it, just use the 'e' keyboard.
