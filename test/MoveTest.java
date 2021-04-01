@@ -1,26 +1,43 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 public class MoveTest {
+
+    Board3x3 board;
+    Move move;
+    
+    @BeforeEach
+    void setup(){
+        board = new Board3x3();
+        board.arr = new int[][]{{1, 2, 3},{4, 7, 5},{6, 8, 0}};
+        move = new Move(board);
+    }
+
     @Test
     void up(){
-        Board3x3 board1 = new Board3x3();
-        Move move1 = new Move();
-        assertEquals(move1.up(board1));
+        move.up();
+        assertEquals(5, board.arr[2][2]);
     }
+
     @Test
     void down(){
-        Board3x3 board1 = new Board3x3();
-        Move move1 = new Move();
-        assertEquals(move1.down(board1));
+        move.up();
+        move.down();
+        assertEquals(0, board.arr[2][2]);
     }
+
     @Test
     void left(){
-        Board3x3 board1 = new Board3x3();
-        Move move1 = new Move();
-        assertEquals(move1.left(board1));
+        move.left();
+        assertEquals(8, board.arr[2][2]);
     }
+
     @Test
     void right(){
-        Board3x3 board1 = new Board3x3();
-        Move move1 = new Move();
-        assertEquals(move1.right(board1));
+        move.left();
+        move.right();
+        assertEquals(0, board.arr[2][2]);
     }
 }
